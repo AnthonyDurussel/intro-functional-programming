@@ -9,54 +9,52 @@ const initialState = {
       title: "🚀 Introduction à la programmation fonctionnelle",
       content: `
         <p>Et si je vous disais que vous utilisez déjà la programmation fonctionnelle sans même le savoir ?</p>
-    <p>Des fonctions comme <code>map()</code>, <code>filter()</code> ou <code>reduce()</code> font partie de votre quotidien, mais vous n'avez peut-être jamais remarqué qu'elles reposent sur un paradigme révolutionnaire.</p>
+    <p>Des fonctions comme <code>map()</code>, <code>filter()</code> ou <code>reduce()</code> font partie de votre quotidien, mais vous n'avez peut-être jamais remarqué qu'elles reposent sur le paradigme de la programmation fonctionnelle.</p>
     <p>La programmation fonctionnelle n'est pas une mode – c'est un changement de perspective qui pourrait rendre votre code plus fiable, plus rapide et plus facile à maintenir. Prêt à explorer ce que vous utilisez déjà sans le savoir ?</p>
 `,
     },
     {
       id: 2,
-      title: "🧪 Fonctionnelle vs Impérative : Qu'est-ce qui change vraiment ?",
+      title: "Fonctionnelle vs Impérative : Qu'est-ce qui change vraiment ?",
       content: `
-        <p>Vous avez probablement utilisé ces deux paradigmes sans même y penser. Mais quelle est la vraie différence entre eux ? Regardons de plus près.</p>
+        <p>Vous avez probablement utilisé ces deux paradigmes sans même y penser. Mais quelle est la vraie différence entre eux ? Regardons cela de plus près.</p>
         
-        <h3>📜 Programmation Impérative :</h3>
+        <h3>Programmation Impérative :</h3>
         <p>Dans ce modèle, vous devez décrire <strong>comment</strong> chaque étape doit être effectuée. Vous manipulez directement les données et contrôlez leur état au fur et à mesure.</p>
-        <p>Exemple : Filtrer les adultes d'une liste de personnes.</p>
+        <p>Exemple : Faire la somme des nombres pair.</p>
         <pre>
-    let personnes = [
-      { nom: "Alice", age: 30 },
-      { nom: "Bob", age: 17 },
-      { nom: "Charlie", age: 21 }
-    ];
-    let adultes = [];
-    for (let i = 0; i < personnes.length; i++) {
-      if (personnes[i].age >= 18) {
-        adultes.push(personnes[i]);
-      }
+const nombres = [1, 2, 3, 4, 5, 6];
+let somme = 0;
+
+for (let i = 0; i < nombres.length; i++) {
+    if (nombres[i] % 2 === 0) {
+        somme += nombres[i];
     }
-    console.log(adultes);
+}
+
+console.log(somme);
         </pre>
         <p><strong>Problème :</strong> L'état de la liste est modifié au fur et à mesure, et la logique est impérative, donc le code peut devenir difficile à maintenir et à comprendre.</p>
     
-        <h3>⚡ Programmation Fonctionnelle :</h3>
+        <h3>Programmation Fonctionnelle :</h3>
         <p>Ici, vous vous concentrez sur <strong>ce que</strong> vous voulez accomplir, pas sur <strong>comment</strong>. Utilisez des fonctions comme filter() pour créer une nouvelle liste, sans changer l'originale.</p>
         <pre>
-    const personnes = [
-      { nom: "Alice", age: 30 },
-      { nom: "Bob", age: 17 },
-      { nom: "Charlie", age: 21 }
-    ];
-    const adultes = personnes.filter(personne => personne.age >= 18);
-    console.log(adultes);
+const nombres = [1, 2, 3, 4, 5, 6];
+
+const somme = nombres
+    .filter(n => n % 2 === 0)
+    .reduce((acc, n) => acc + n, 0);
+
+console.log(somme);
         </pre>
         <p><strong>Avantage :</strong> La logique est plus concise et plus claire. Aucun changement d'état, juste une transformation des données. Le code est plus lisible et testable.</p>
       `,
     },
     {
       id: 3,
-      title: "🧪 Quelques Principes de base",
+      title: "Quelques principes de base",
       content: `
-        <p><strong>1. Immutabilité des données</strong></p>
+        <p><strong>1. Immutabilité</strong></p>
         <p>Les données sont immuables : une fois créées, elles ne peuvent plus être modifiées. Cela empêche les effets de bord et rend le code plus prévisible.</p>
         
         <p><strong>2. Fonctions pures</strong></p>
@@ -69,7 +67,7 @@ const initialState = {
     },
     {
       id: 4,
-      title: "🧩 Immutabilité",
+      title: "Immutabilité",
       content: `
       <p>Qu'est-ce que l'immutabilité ?
 
@@ -115,7 +113,7 @@ number = 31;`,
     },
     {
       id: 5,
-      title: "🔄 Fonctions Pures",
+      title: "Fonctions Pures",
       content: `
       <p>Une fonction pure est une fonction qui :</p>
 <li>Retourne toujours le même résultat pour les mêmes arguments</li>
@@ -156,7 +154,7 @@ console.log(fruits);
 
     {
       id: 6,
-      title: "🎯 Les fonctions d'ordre supérieur ",
+      title: "Les fonctions d'ordre supérieur ",
       content: `
       <p>Une fonction d'ordre supérieur est une fonction qui :
 <li>Prend une fonction en argument.</li>
@@ -200,7 +198,7 @@ console.log(adultes);`,
     },
     {
       id: 7,
-      title: "💡 Avantages et Applications",
+      title: "Avantages et Applications",
       content: `
         <p><strong>Avantages majeurs:</strong></p>
         <ul>
@@ -240,7 +238,7 @@ console.log(adultes);`,
         </ul>
         <br/>
         <p>La programmation fonctionnelle ne s'oppose pas aux autres paradigmes, mais elle les complète. Dans le monde moderne du développement, vous trouverez souvent des langages hybrides qui intègrent des éléments fonctionnels pour tirer parti de ces avantages. Par exemple, avec React et l’utilisation des Hooks, ou encore avec Redux pour gérer l’état de manière immuable et prévisible.</p>
-        <p>Ce cours a été réalisé avec React et Redux (voir <a href="https://github.com/AnthonyDurussel/intro-functional-programming" target="_blank">GitHub</a>)</p>
+        <p>Ce cours a été réalisé avec React et Redux en essayant d'appliquer les principes de la programmation fonctionnelle (voir <a href="https://github.com/AnthonyDurussel/intro-functional-programming" target="_blank">GitHub</a>)</p>
       `,
     },
   ],
