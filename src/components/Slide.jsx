@@ -24,11 +24,11 @@ function Slide({ slide }) {
       {hasDualCode ? (
         <div className="code-comparison">
           <div className="code-column">
-            <h3>Approche Fonctionnelle</h3>
+            <h3>{slide.code.functionalTitle || "Approche Fonctionnelle"}</h3>
             <CodeExecutor code={slide.code.functional} />
           </div>
           <div className="code-column">
-            <h3>Approche Impérative</h3>
+            <h3>{slide.code.imperativeTitle || "Approche Impérative"}</h3>
             <CodeExecutor code={slide.code.imperative} />
           </div>
         </div>

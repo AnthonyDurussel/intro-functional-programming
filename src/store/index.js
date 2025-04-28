@@ -84,6 +84,7 @@ const initialState = {
 
       `,
       code: {
+        imperativeTitle: "Mutable",
         imperative: `
 // Déclaration avec const
 const personne = {
@@ -97,13 +98,13 @@ console.log("Avant modification :", personne);
 personne.age = 31;
 console.log("Après modification :", personne);
 
-// On peut utiliser Object.freeze pour rendre l'objet immuable
+// On peut utiliser Object.freeze pour rendre l'objet immutable
 const personneImmutable = Object.freeze({
   prenom: "Alice",
   age: 30
 });
 `,
-
+        functionalTitle: "Immutable",
         functional: `/// Déclaration avec const
 const number = 3
 
