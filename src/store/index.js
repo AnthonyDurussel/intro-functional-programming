@@ -238,7 +238,7 @@ console.log(adultes);`,
         </ul>
         <br/>
         <p>La programmation fonctionnelle ne s'oppose pas aux autres paradigmes, mais elle les complète. Dans le monde moderne du développement, vous trouverez souvent des langages hybrides qui intègrent des éléments fonctionnels pour tirer parti de ces avantages. Par exemple, avec React et l’utilisation des Hooks, ou encore avec Redux pour gérer l’état de manière immuable et prévisible.</p>
-        <p> Ce cours a été réalisé avec React et Redux (voir <a href="https://github.com/AnthonyDurussel/intro-functional-programming" target="_blank">GitHub</a>)</p>
+        <p>Ce cours a été réalisé avec React et Redux (voir <a href="https://github.com/AnthonyDurussel/intro-functional-programming" target="_blank">GitHub</a>)</p>
       `,
     },
   ],
