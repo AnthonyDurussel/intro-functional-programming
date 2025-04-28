@@ -212,7 +212,7 @@ console.log(adultes);`,
           <li>Big Data et traitement de données (Apache Spark, MapReduce)</li>
           <li>Intelligence artificielle et apprentissage automatique</li>
           <li>Systèmes distribués (Erlang, Elixir)</li>
-          <li>Développement web moderne (React, Redux)</li>
+          <li>Langage de programmation qui s'appuie fortement sur la programmation fonctionnelle (Scala [java], Haskell)</li>
         </ul>
       `,
     },
