@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://tekad-sarl.github.io",
+  "homepage": "https://anthonydurussel.github.io/intro-functional-programming",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
