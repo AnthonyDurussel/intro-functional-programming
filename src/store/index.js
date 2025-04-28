@@ -84,7 +84,7 @@ const initialState = {
 
       `,
       code: {
-        imperative: `// Cela ne fonctionne pas avec les objets ou les tableaux
+        imperative: `
 // Déclaration avec const
 const personne = {
   prenom: "Alice",
@@ -107,7 +107,8 @@ const personneImmutable = Object.freeze({
         functional: `/// Déclaration avec const
 const number = 3
 
-// On ne peut pas modifier le contenu de l'objet, il est immutable !
+// On ne peut pas modifier le contenu de l'objet
+// il est immutable !
 number = 31;`,
       },
     },

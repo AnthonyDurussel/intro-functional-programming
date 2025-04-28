@@ -1598,6 +1598,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ace-builds@npm:^1.36.3, ace-builds@npm:^1.40.1":
+  version: 1.40.1
+  resolution: "ace-builds@npm:1.40.1"
+  checksum: 10c0/9e964f64ee64fd697568571fc3c42a8d83c27a77fcda9e7c5df772e91945793eedc892950c290eccf7de58516c83b708427c2639e050cfbb978cef93126322b7
+  languageName: node
+  linkType: hard
+
 "acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -2342,6 +2349,13 @@ __metadata:
   version: 1.1.0
   resolution: "detect-node-es@npm:1.1.0"
   checksum: 10c0/e562f00de23f10c27d7119e1af0e7388407eb4b06596a25f6d79a360094a109ff285de317f02b090faae093d314cf6e73ac3214f8a5bb3a0def5bece94557fbe
+  languageName: node
+  linkType: hard
+
+"diff-match-patch@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "diff-match-patch@npm:1.0.5"
+  checksum: 10c0/142b6fad627b9ef309d11bd935e82b84c814165a02500f046e2773f4ea894d10ed3017ac20454900d79d4a0322079f5b713cf0986aaf15fce0ec4a2479980c86
   languageName: node
   linkType: hard
 
@@ -4084,6 +4098,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.get@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "lodash.get@npm:4.4.2"
+  checksum: 10c0/48f40d471a1654397ed41685495acb31498d5ed696185ac8973daef424a749ca0c7871bf7b665d5c14f5cc479394479e0307e781f61d5573831769593411be6e
+  languageName: node
+  linkType: hard
+
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: 10c0/dfdb2356db19631a4b445d5f37868a095e2402292d59539a987f134a8778c62a2810c2452d11ae9e6dcac71fc9de40a6fedcb20e2952a15b431ad8b29e50e28f
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -4908,6 +4936,22 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"react-ace@npm:^14.0.1":
+  version: 14.0.1
+  resolution: "react-ace@npm:14.0.1"
+  dependencies:
+    ace-builds: "npm:^1.36.3"
+    diff-match-patch: "npm:^1.0.5"
+    lodash.get: "npm:^4.4.2"
+    lodash.isequal: "npm:^4.5.0"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/dbc77970836f13bad88365903d077edd68cc1955857290475bc067e0b801181c1d60a9ee08cf89b20895fe312dbb169c072c5b23338d7176f9f658db7929732f
   languageName: node
   linkType: hard
 
@@ -6052,6 +6096,7 @@ __metadata:
     "@types/react-dom": "npm:^19.0.3"
     "@types/react-scroll": "npm:^1"
     "@vitejs/plugin-react": "npm:^4.3.4"
+    ace-builds: "npm:^1.40.1"
     eslint: "npm:^9.18.0"
     eslint-config-mantine: "npm:^4.0.3"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
@@ -6064,6 +6109,7 @@ __metadata:
     prettier: "npm:^3.4.2"
     prop-types: "npm:^15.8.1"
     react: "npm:^19.0.0"
+    react-ace: "npm:^14.0.1"
     react-dom: "npm:^19.0.0"
     react-redux: "npm:9.2.0"
     react-router-dom: "npm:^7.1.3"
